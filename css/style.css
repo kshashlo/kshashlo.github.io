@@ -1,0 +1,341 @@
+body {
+	font-family: 'Roboto', 'Helvetica', "sans-serif";
+	font-size:15px;
+	line-height:1.5;
+	padding:0;
+	margin:0;
+	background-color: gray;
+
+}
+
+/*Global positioning/background color*/
+.container{
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+ul{
+	margin:0;
+	padding: 0;
+
+}
+
+h2 {
+	text-align: center;
+	margin: 15px;
+	padding:10px;
+
+}
+
+.button_1{
+	height:38px;
+	background:#FFFF66;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: black;
+}
+
+.dark{
+	padding:15px;
+	background:white;
+	color:black;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+/*Header display*/
+header{
+	background:black;
+	color:white;   
+	padding-top:10px;
+	min-height:70px;
+	border-bottom:#FFFF66 3px solid;
+
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header ul{
+	margin:0;
+	padding:20px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+
+/*header position*/
+header #branding {
+	float: left;
+
+}
+
+header #bradning h1 {
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+/*links + change color of links on hover*/
+header .highlight, header .current a{
+	color:#FFFF66;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight: bold;
+}
+
+article h1{
+	text-align: center;
+	margin: 15px;
+	padding:10px;
+}
+
+
+/*showcase- the image + text in the center of main page*/
+
+#showcase{
+	min-height: 400px;
+	color: #FFFF66;
+	background: url("../img/mountains.jpeg" ) no-repeat 0 -65px;
+	text-align: center;
+	
+
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+#showcase p{
+	font-size:20px;
+}
+
+#newsletter{
+	padding:15px;
+	color:white;
+	background:#35424a;
+}
+
+#newsletter h1{
+	float:left;
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+
+}
+
+#newsletter input[type='email']{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+
+/*resume format*/
+#resume {
+	background-color: white;
+}
+
+#resume ul{
+	color: gray;
+
+}
+
+
+#resume li a{
+	text-decoration: none;
+}
+
+article #sauce{
+	color:black;
+	
+}
+/*boxes on main page + about*/
+
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxes .box img{
+	width: 200px;
+}
+
+/*sidebar*/
+section #sidebar{
+	float: left;
+	width:40%;
+	margin-top: 5px;
+	color:black;
+	position: ;
+}
+
+section #sidebar .quote input, section #sidebar .quote textarea{
+	float:left;
+	width: 90%;
+	padding: 5px;
+}
+
+/*main column*/
+article #main-col{
+	float: left;
+	width: 65%;
+	color:white;
+}
+
+#main-col .photo {
+	float: right;
+	width: 40%;
+	padding: 0 0 5px 15px;
+	text-align: center;
+	text-decoration: bold;
+}
+
+/*resume list*/
+#main li a{
+	text-decoration: none;
+	font-size:18px;
+	color:black;
+}
+
+#main li a:hover{
+	color:#cccccc;
+	font-weight: bold;
+}
+
+/*services page list */
+ul #services li{
+list-style: none;
+padding: 20px;
+border: gray solid 1px;
+margin-bottom: 5px;
+background: #e6e6e6;
+}
+
+/* Map */
+
+iframe{
+    border-width: 0px;
+    width:100%;
+    height:400px;
+
+}
+.map {
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
+/*footer*/
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: white;
+	background-color: #35424a;
+	text-align: center;
+}
+
+
+/*media queries - ~~responsive design~~ */
+
+@media(max-width: 768px){
+	header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box,
+	article #main-col, section #sidebar, #main-col .photo{
+		float: none;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+	header{
+		padding-bottom: 10px;
+	}
+
+	#showcase h1{
+		margin-top: 40px;
+	}
+
+	#newsletter button, .quote button{
+		display: block;
+		width:100%;
+	}
+
+	#newsletter form input[type="email"], .quote input, .quote textarea{
+		width:100%;
+		margin-bottom: 5px;
+	}
+
+}
+
+/*@media(max-width: 600px){
+	.container a:not(:first-child) {display: none;}
+	.comtainer a.icon{
+		float: right;
+		display: block;
+	}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
