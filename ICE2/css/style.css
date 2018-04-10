@@ -1,0 +1,110 @@
+
+body{
+	padding: 0;
+	margin: auto;
+}
+
+ .container {
+ 	position: fixed;
+ 	width: 100%;
+  	margin: 0 auto;
+  	max-width: 800px;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	top: 0;
+ }
+
+ .bar {
+ 	height: 40px;
+ 	margin-top: 250px;
+ }
+/*rounding when hovered over*/
+img.hover:hover {
+border-radius: 40%;
+}
+
+img {
+	width: 20%;
+	height: auto;
+	float: left;
+	padding:20px;
+	margin: 20px;
+	border: 3px solid black;
+	display: inline-block;
+}
+
+
+/*grayscale*/ 
+img.focus:focus {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(1);
+}
+
+img.active:active {
+	opacity: 0.5;
+}
+
+/*box format*/
+.bar {
+	background-color: gray;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.square:target {
+	overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(1692px, 0, 0);
+  }
+}
+
+@keyframes twist {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+
+}
+
+.square {
+	background-color: blue;
+	width: 30px;
+	height: 30px;
+	border: 5px solid aqua;
+	border-radius: 5px;
+	position: relative;
+}
+
+.square:focus{
+	animation-name: slide;
+	animation-duration: 4s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+
+.square:active:first-child {
+	background-color: red;
+	animation-name: twist;
+	animation-duration: 4s;
+	animation-iteration-count: 4;
+	
+}
+
+.square:active:second-child {
+	animation-name: slide;
+	animation-duration: 4s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+
