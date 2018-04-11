@@ -10,8 +10,8 @@
   margin: 0;
   list-style: none;
   display: -ms-flexbox;
+  display: flex;
   flex-flow: row-reverse wrap; /*Try nowrap and resize*/
-  justify-content: space-around;
 }
 
 .flex-item {
