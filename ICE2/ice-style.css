@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+}
+
+header{
+	 background-color: yellow;
+}
+
+header h1 {
+	text-align: right;
+
+}
+
+nav {
+	background-color: green;
+	padding: 20px;
+}
+
+nav li {
+	color: white;
+	background: black;
+	display: inline;
+	margin: 0;
+	padding: 0 20px;
+}
+
+nav li:link { href$=".com"
+	color:white;
+}
+
+body {
+	background: #999999;
+	background-color: "dark gray";
+	font-color: black;
+}
+
+aside {
+	float: right;
+	background-color: white;
+	width: 200px;
+	height: 400px;
+	clear: both;
+}
+ 
+#content li {
+	text-align: center;
+	list-style-type: none;
+}
+
+footer{
+	background-color: green;
+	padding: 20px;
+}
+
+footer:link {
+	color: white;
+}
+
+#wrap {
+	background-color: #545649;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
