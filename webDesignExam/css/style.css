@@ -1,0 +1,47 @@
+body{
+	height: 100%;
+	margin: 0;
+}
+
+.column img {
+	border: 5px solid blue;
+	padding: 5%;
+	margin-top: 8px;
+	width: 88%;
+	vertical-align: middle;
+	/*display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	flex-flow: wrap;*/
+}
+
+.images {
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.column {
+	box-sizing: border-box;
+	flex: 50%;
+	max-width: 50%;
+	margin: auto;
+}
+
+.bg {
+	background-image: url("../images/funky-lines/funky-lines.png");
+	height:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 768px){ img {
+		float: center;
+		display: block;
+		width: 100%;
+	}
+
+	}
+
